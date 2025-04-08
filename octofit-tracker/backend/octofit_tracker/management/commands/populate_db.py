@@ -22,11 +22,11 @@ class Command(BaseCommand):
 
         # Create users
         users = [
-            User(_id=ObjectId(), username='thundergod', email='thundergod@mhigh.edu', password='thundergodpassword'),
-            User(_id=ObjectId(), username='metalgeek', email='metalgeek@mhigh.edu', password='metalgeekpassword'),
-            User(_id=ObjectId(), username='zerocool', email='zerocool@mhigh.edu', password='zerocoolpassword'),
-            User(_id=ObjectId(), username='crashoverride', email='crashoverride@mhigh.edu', password='crashoverridepassword'),
-            User(_id=ObjectId(), username='sleeptoken', email='sleeptoken@mhigh.edu', password='sleeptokenpassword'),
+            User(_id=ObjectId(), name='thundergod', email='thundergod@mhigh.edu', age=30),
+            User(_id=ObjectId(), name='metalgeek', email='metalgeek@mhigh.edu', age=25),
+            User(_id=ObjectId(), name='zerocool', email='zerocool@mhigh.edu', age=28),
+            User(_id=ObjectId(), name='crashoverride', email='crashoverride@mhigh.edu', age=22),
+            User(_id=ObjectId(), name='sleeptoken', email='sleeptoken@mhigh.edu', age=35),
         ]
         User.objects.bulk_create(users)
 
